@@ -55,6 +55,10 @@ img {
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: 0 !important;
+}
+
 /**
  * Font parameters
  */
@@ -94,7 +98,7 @@ hr {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a {
@@ -251,6 +255,14 @@ a.sub-link {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+}
+
+.double-col.logo-l {
+    flex: 75%;
+}
+
+.double-col.logo-r {
+    flex: 25%;
 }
 
 .triple-col {
@@ -418,7 +430,7 @@ a.sub-link {
 .button span:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f05a";
+    content: '\f05a';
     position: absolute;
     opacity: 0;
     top: 0;
@@ -429,13 +441,13 @@ a.sub-link {
 .button.register span:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f2f6";
+    content: '\f2f6';
 }
 
 .button.email span:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f0e0";
+    content: '\f0e0';
 }
 
 .button:hover span {
@@ -524,12 +536,6 @@ a.sub-link {
 /* Smartphones (portrait and landscape) */
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
-    :root {
-        --container-padding: 80px 5px 50px 5px;
-        --container-padding-lr: 40px 5px 40px 5px;
-        --container-padding-tb: 0px 5px 0px 5px;
-    }
-    
     h1 {
         font-size: 28px;
     }
@@ -577,7 +583,21 @@ a.sub-link {
 
 /* Smartphones (landscape) */
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {}
+@media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
+    :root {
+        --container-padding: 60px 5px 30px 5px;
+        --container-padding-lr: 20px 5px 20px 5px;
+        --container-padding-tb: 0px 5px 0px 5px;
+    }
+
+    .button:hover span {
+        padding-right: 0px;
+    }
+    .button:hover span:after {
+        opacity: 0;
+        right: -20px;
+    }
+}
 
 /* Smartphones (portrait) */
 
@@ -680,6 +700,13 @@ a.sub-link {
     }
     .quadruple-col.sp {
         flex: 25%;
+    }
+    .double-col.logo-l {
+        flex: 50%;
+    }
+    
+    .double-col.logo-r {
+        flex: 50%;
     }
 }
 
