@@ -20,7 +20,7 @@
     <!-- Links and Scripts -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="./ieee_favicon.ico">
     <link href="./css/styles.css" rel="stylesheet" />
-    <script src="../scripts/scripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
         crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
@@ -29,10 +29,20 @@
 </head>
 
 <body>
-    <!-- navbar-->
-    <nav>
-        <!--FIXME: Responsive navbar missing-->
-    </nav>
+    <!-- navbar -->
+    <header class="header" id="navbar">
+        <div class="content-block center" id="container">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a class="link" href="#aboutus">About Us</a></li>
+                <li><a class="link" href="#members">Members</a></li>
+                <li><a class="link" href="#events">Events</a></li>
+                <li><a class="link" href="#joinieee">Join IEEE</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- banner -->
     <div class="bg-wrapper">
         <div class="banner-content center padding-container" id="container">
             <div class="row vertical-center">
@@ -57,7 +67,7 @@
         <img src="./images/mike-bergmann-9nw9SRmmfZw-unsplash.jpg">
     </div>
     <!-- about us -->
-    <div class="wrapper">
+    <div class="wrapper" id="aboutus">
         <div class="content-block center padding-container" id="container">
             <div class="row">
                 <div class="col padding-content">
@@ -140,7 +150,7 @@
         </div>
     </div>
     <!-- ExCom -->
-    <div class="wrapper bg-grey">
+    <div class="wrapper bg-grey" id="members">
         <div class="content-block center padding-container" id="container">
             <div class="row">
                 <div class="col padding-content">
@@ -295,11 +305,11 @@
         </div>
     </div>
     <!-- Latest & Upcoming events -->
-    <div class="wrapper">
+    <div class="wrapper" id="events">
         <div class="content-block center padding-container" id="container">
             <div class="row">
                 <div class="col padding-content">
-                    <h1  class="padding-content-lr">
+                    <h1 class="padding-content-lr">
                         <title-color>
                             <bold>Latest &<br>Upcoming<br>Events</bold>
                         </title-color>
@@ -494,7 +504,7 @@
         </div>
     </div>
     <!-- join ieee -->
-    <div class="wrapper bg-grey">
+    <div class="wrapper bg-grey" id="joinieee">
         <div class="content-block center padding-container" id="container">
             <div class="row">
                 <div class="col padding-content">
@@ -515,7 +525,8 @@
                                                 <div class="circle__wrapper">
                                                     <div class="circle__content">
                                                         <h1>
-                                                            <text-color-alt><i class="fas fa-sign-in-alt"></i></text-color-alt>
+                                                            <text-color-alt><i class="fas fa-sign-in-alt"></i>
+                                                            </text-color-alt>
                                                         </h1>
                                                     </div>
                                                 </div>
@@ -530,7 +541,7 @@
                                         </h3>
                                         <hr>
                                         <h4>
-                                            <text-color>Register on the IEEE official website. 
+                                            <text-color>Register on the IEEE official website.
                                                 <br>Choose the category
                                                 “Professional and Education Information” and then select “Instituto
                                                 Politécnico do Cávado e Ave”.<br><br>
@@ -558,7 +569,8 @@
                                                 <div class="circle__wrapper">
                                                     <div class="circle__content">
                                                         <h1>
-                                                            <text-color-alt><i class="fas fa-envelope"></i></text-color-alt>
+                                                            <text-color-alt><i class="fas fa-envelope"></i>
+                                                            </text-color-alt>
                                                         </h1>
                                                     </div>
                                                 </div>
@@ -600,7 +612,8 @@
                                                 <div class="circle__wrapper">
                                                     <div class="circle__content">
                                                         <h1>
-                                                            <text-color-alt><i class="fas fa-user-clock"></i></text-color-alt>
+                                                            <text-color-alt><i class="fas fa-user-clock"></i>
+                                                            </text-color-alt>
                                                         </h1>
                                                     </div>
                                                 </div>
@@ -656,8 +669,10 @@
                             </div>
                             <div class="row">
                                 <a class="sub-link padding-content-r" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                                <a class="sub-link padding-content-lr" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                                <a class="sub-link padding-content-lr" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a class="sub-link padding-content-lr" href="#"><i
+                                        class="fab fa-linkedin fa-2x"></i></a>
+                                <a class="sub-link padding-content-lr" href="#"><i
+                                        class="fab fa-instagram fa-2x"></i></a>
                                 <a class="sub-link padding-content-l" href="#"><i class="fab fa-github fa-2x"></i></a>
                             </div>
                         </div>
@@ -697,6 +712,10 @@
             <pre><text-color-alt>Copyright © 2020 | IEEE IPCA Student Branch</text-color-alt></pre>
         </div>
     </div>
+    <!-- navbar background onscroll-->
+    <script>  
+        window.onscroll = function () { navbar() };        
+    </script>
 </body>
 
 </html>
