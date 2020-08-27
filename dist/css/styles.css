@@ -696,7 +696,7 @@ a.sub-link {
         --container-padding-tb: 0px 5px 0px 5px;
     }
     .header {
-        background-color: #1c073b;
+        background-color: transparent;
         transition: all .5s ease;
     }
     .header li a {
@@ -777,7 +777,7 @@ a.sub-link {
     }
     .header li {
         float: left;
-        padding: 20px 30px;
+        padding: 20px 15px;
     }
     .header li a {
         overflow: hidden;
