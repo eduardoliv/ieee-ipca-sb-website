@@ -36,19 +36,20 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
                 <li><a class="link" href="#aboutus">About Us</a></li>
-                <li><a class="link" href="#members">Members</a></li>
+                <li><a class="link" href="#members">ExCom</a></li>
                 <li><a class="link" href="#events">Events</a></li>
                 <li><a class="link" href="#joinieee">Join IEEE</a></li>
+                <li><a class="link" href="#contacts">Contacts</a></li>
             </ul>
         </div>
     </header>
     <!-- banner -->
-    <div class="bg-wrapper">
+    <div class="bg-wrapper" id="banner">
         <div class="banner-content center padding-container" id="container">
             <div class="row vertical-center">
                 <div class="row padding-banner-content-tb">
                     <div class="double-col padding-content-l logo-l">
-                        <img src="./svg/IPCA_SB_Logotipe.svg" alt="IEEE IPCA SB Logotype">
+                        <embed type="image/svg+xml" src="./svg/IPCA_SB_Logotipe.svg">
                     </div>
                     <div class="double-col logo-r"></div>
                 </div>
@@ -551,7 +552,8 @@
                                         <hr>
                                         <div class="row">
                                             <div class="col flex-adjust padding-content-tb">
-                                                <button class="button register"><span>Register</span></button>
+                                                <button class="button register"
+                                                    onclick="location.href='https://www.ieee.org/membership/join/index.html'"><span>Register</span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -594,7 +596,9 @@
                                         <hr>
                                         <div class="row">
                                             <div class="col flex-adjust padding-content-tb">
-                                                <button class="button email"><span>Email Us</span></button>
+                                                <button class="button email"
+                                                    onclick="location.href='mailto:ieee.est.sb@ipca.pt'"><span>Email
+                                                        Us</span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -643,7 +647,7 @@
         </div>
     </div>
     <!-- contacts -->
-    <div class="wrapper bg-gradient">
+    <div class="wrapper bg-gradient" id="contacts">
         <div class="content-block center padding-container-tb" id="container">
             <div class="row">
                 <div class="col padding-content">
@@ -668,10 +672,13 @@
                                 <h3><i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp;Follow Us</h3>
                             </div>
                             <div class="row">
-                                <a class="sub-link padding-content-r" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                                <a class="sub-link padding-content-lr" href="#"><i
+                                <a class="sub-link padding-content-r"
+                                    href="https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/"><i
+                                        class="fab fa-facebook fa-2x"></i></a>
+                                <a class="sub-link padding-content-lr"
+                                    href="https://www.linkedin.com/in/ieee-ipca-student-branch-78071a196/"><i
                                         class="fab fa-linkedin fa-2x"></i></a>
-                                <a class="sub-link padding-content-lr" href="#"><i
+                                <a class="sub-link padding-content-lr" href="https://www.instagram.com/ieee.ipca.sb/"><i
                                         class="fab fa-instagram fa-2x"></i></a>
                                 <a class="sub-link padding-content-l" href="#"><i class="fab fa-github fa-2x"></i></a>
                             </div>
@@ -682,22 +689,26 @@
                                     <h3><i class="fas fa-link"></i>&nbsp;&nbsp;&nbsp;Explore IEEE</h3>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link" href="#">IEEE <italic>Xplore</italic> Digital Library</a></pre>
+                                    <pre><a class="sub-link" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE <italic>Xplore</italic> Digital Library</a></pre>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link" href="#">IEEE Standarts </a></pre>
+                                    <pre><a class="sub-link" href="http://standards.ieee.org/?_ga=2.38607011.1218789621.1598553244-1897050209.1590843840">IEEE Standarts </a></pre>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link" href="#">IEEE Spectrum</a></pre>
+                                    <pre><a class="sub-link" href="http://spectrum.ieee.org/?_ga=2.38607011.1218789621.1598553244-1897050209.1590843840">IEEE Spectrum</a></pre>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link" href="#">IEEE Collabratec™</a></pre>
+                                    <pre><a class="sub-link" href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec">IEEE Collabratec™</a></pre>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link" href="#">Member Benefits</a></pre>
+                                    <pre><a class="sub-link" href="https://www.ieee.org/membership/benefits/index.html">Member Benefits</a></pre>
                                 </div>
                                 <div class="row">
-                                    <pre><a class="sub-link"href="#">More IEEE Sites</a></pre>
+                                    <pre><a class="sub-link"href="https://www.ieee.org/sitemap.html">More IEEE Sites</a></pre>
+                                </div>
+                                <div class="row padding-content-tb">
+                                    <a class="sub-link" href="#banner"><i class="fas fa-arrow-circle-up fa-2x"></i>
+                                        <pre>Top of page</pre></a>
                                 </div>
                             </div>
                         </div>
@@ -712,9 +723,11 @@
             <pre><text-color-alt>Copyright © 2020 | IEEE IPCA Student Branch</text-color-alt></pre>
         </div>
     </div>
-    <!-- navbar background onscroll-->
-    <script>  
-        window.onscroll = function () { navbar() };        
+    <!-- navbar background onscroll / onclick -->
+    <script>
+        window.onscroll = function () { navbar() };
+        window.onclick = function (e) { menuHide(e) };
+
     </script>
 </body>
 

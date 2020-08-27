@@ -25,6 +25,10 @@
     --container-padding-tb: 0px 5px 0px 5px;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -204,10 +208,10 @@ a.sub-link {
 }
 
 .bg-gradient {
-    background: rgb(198,109,173);
-    background: -moz-linear-gradient(135deg, rgba(198,109,173,1) 0%, rgba(57,25,188,1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(198,109,173,1) 0%, rgba(57,25,188,1) 100%);
-    background: linear-gradient(135deg, rgba(198,109,173,1) 0%, rgba(57,25,188,1) 100%);
+    background: rgb(198, 109, 173);
+    background: -moz-linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
+    background: linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
 }
 
 #container {
@@ -355,19 +359,19 @@ a.sub-link {
     filter: grayscale(0%);
 }
 
-.b01{
-    background-color: #FF714F  ;
+.b01 {
+    background-color: #FF714F;
 }
 
-.b02{
-    background-color: #FFCC63  ;
+.b02 {
+    background-color: #FFCC63;
 }
 
-.b03{
-    background-color: #23AD7B  ;
+.b03 {
+    background-color: #23AD7B;
 }
 
-.bg .circle:after{
+.bg .circle:after {
     background-color: #ffffff;
 }
 
@@ -473,6 +477,7 @@ a.sub-link {
 .upcoming-event {
     background-color: #2BBF5F;
 }
+
 .canceled-event {
     background-color: #D82433;
 }
@@ -510,7 +515,7 @@ a.sub-link {
 .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: max-height .3s ease-in-out;
 }
 
 /* menu icon */
@@ -558,7 +563,7 @@ a.sub-link {
 }
 
 .header .menu-btn:checked~.menu {
-    max-height: 50vh;
+    max-height: 100vh;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -639,49 +644,46 @@ a.sub-link {
     h1 {
         font-size: 28px;
     }
-    
     h2 {
         font-size: 24px;
     }
-    
     h3 {
         font-size: 18px;
     }
-    
     h4 {
         font-size: 14px;
     }
-    
     h5 {
         font-size: 12px;
     }
-    
     hr {
         height: .5px;
         border-width: 0;
         background-color: lightgrey;
     }
-    
     p {
         font-size: 18px;
     }
-    
     a {
         font-size: 14px;
         text-align: center;
     }
-
     .header li a {
         font-size: 24px;
     }
-    
     blockquote {
         font-size: 12px;
     }
-    
     pre {
         font-size: 10px;
         white-space: pre-line;
+    }
+    :root {
+        --content-padding: 5px;
+        --content-padding-tb: 5px 0px 5px 0px;
+        --content-padding-lr: 0px 5px 0px 5px;
+        --content-padding-l: 0px 0px 0px 5px;
+        --content-padding-r: 0px 5px 0px 0px;
     }
 }
 
@@ -693,16 +695,13 @@ a.sub-link {
         --container-padding-lr: 20px 5px 20px 5px;
         --container-padding-tb: 0px 5px 0px 5px;
     }
-
     .header {
         background-color: #1c073b;
         transition: all .5s ease;
     }
-
     .header li a {
-        font-size: 18px;
+        font-size: 22px;
     }
-
     .button:hover span {
         padding-right: 0px;
     }
@@ -729,7 +728,8 @@ a.sub-link {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
 
 /* Desktops and laptops */
-@media screen and (min-width: 560px){
+
+@media only screen and (min-width: 560px) {
     :root {
         --container-padding: 110px 65px 80px 65px;
         --container-padding-lr: 80px 65px 80px 65px;
@@ -738,49 +738,40 @@ a.sub-link {
     h1 {
         font-size: 48px;
     }
-    
     h2 {
         font-size: 36px;
     }
-    
     h3 {
         font-size: 24px;
     }
-    
     h4 {
         font-size: 18px;
     }
-    
     h5 {
         font-size: 14px;
     }
-    
     hr {
         height: .5px;
         border-width: 0;
         background-color: lightgrey;
     }
-    
     p {
         font-size: 21px;
     }
-    
     a {
         font-size: 18px;
         text-align: center;
     }
-    
     blockquote {
         font-size: 18px;
     }
-    
     pre {
         font-size: 14px;
         white-space: pre-line;
     }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 800px) and (min-height: 600px) {
     .header ul {
         padding: var(--container-padding-tb);
     }
@@ -827,7 +818,7 @@ a.sub-link {
     }
 }
 
-@media screen and (max-width: 880px) {
+@media only screen and (max-width: 880px) {
     .col {
         flex: 100%;
     }
@@ -845,7 +836,7 @@ a.sub-link {
     }
 }
 
-@media screen and (min-width: 880px) {
+@media only screen and (min-width: 880px) {
     .col {
         flex: 1;
     }
@@ -864,7 +855,6 @@ a.sub-link {
     .double-col.logo-l {
         flex: 50%;
     }
-    
     .double-col.logo-r {
         flex: 50%;
     }
