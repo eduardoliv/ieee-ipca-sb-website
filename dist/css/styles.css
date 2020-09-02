@@ -4,7 +4,7 @@
     --bg-blend: hard-light;
     --blur: 0px;
     --fg-blend: exclusion;
-    --foreground: #1c073b;
+    --foreground: #110626;
     --opacity: 100%;
     --spacing: 0px;
     --font: 'Lato';
@@ -41,12 +41,6 @@ body {
     font-family: var(--font), var(--fontstyle);
     background-color: var(--bodybgcolor);
     color: var(--fontcolor);
-}
-
-img {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 .clearfix {
@@ -124,7 +118,7 @@ italic {
 }
 
 light {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 regular {
@@ -207,11 +201,8 @@ a.sub-link {
     background-color: #f2f2f2;
 }
 
-.bg-gradient {
-    background: rgb(198, 109, 173);
-    background: -moz-linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
-    background: linear-gradient(135deg, rgba(198, 109, 173, 1) 0%, rgba(57, 25, 188, 1) 100%);
+.bg-dark {
+    background: #110626;
 }
 
 #container {
@@ -359,6 +350,10 @@ a.sub-link {
     filter: grayscale(0%);
 }
 
+.svg {
+    max-width: auto;
+}
+
 .b01 {
     background-color: #FF714F;
 }
@@ -390,15 +385,26 @@ a.sub-link {
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     color: black;
+    height: 7.2em; /* exactly three lines */
 }
 
-.card .limiter p {
+.card .limiter h4 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     color: black;
+    height: 7.2em; /* exactly six lines */
+}
+
+.card .limiter h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 2.4em; /* exactly two lines */
 }
 
 .card a .fa-facebook, .card a .fa-linkedin, .card a .fa-instagram, .card a .fa-github {
@@ -414,17 +420,24 @@ a.sub-link {
 .button {
     display: inline-block;
     border-radius: 5px;
-    background-color: #0C0C0C;
+    background-color: #110626;
     border: none;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
+    font-family: 'Lato' !important;
+    font-weight: 400;
     font-size: 18px;
     padding: 15px 50px;
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.button span {
+.button.info {
+    background-color: #EFF1F2;
+    color: #000;
+}
+
+.button span{
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -717,15 +730,27 @@ a.sub-link {
 
 /* iPads (portrait and landscape) */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .svg {
+        max-width: 200px;
+    }
+}
 
 /* iPads (landscape) */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .svg {
+        max-width: 200px;
+    }
+}
 
 /* iPads (portrait) */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .svg {
+        max-width: 300px;
+    }
+}
 
 /* Desktops and laptops */
 
@@ -734,6 +759,9 @@ a.sub-link {
         --container-padding: 110px 65px 80px 65px;
         --container-padding-lr: 80px 65px 80px 65px;
         --container-padding-tb: 0px 65px 0px 65px;
+    }
+    .svg {
+        max-width: 200px;
     }
     h1 {
         font-size: 48px;
@@ -766,7 +794,7 @@ a.sub-link {
         font-size: 18px;
     }
     pre {
-        font-size: 14px;
+        font-size: 12px;
         white-space: pre-line;
     }
 }
@@ -857,6 +885,9 @@ a.sub-link {
     }
     .double-col.logo-r {
         flex: 50%;
+    }
+    .svg {
+        max-width: 100%;
     }
 }
 
