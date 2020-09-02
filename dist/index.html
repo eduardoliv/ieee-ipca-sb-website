@@ -33,14 +33,14 @@
     <!-- Navbar -->
     <header class="header" id="navbar">
         <div class="content-block center" id="container">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <input class="menu-btn" type="checkbox" id="menu-btn" onclick="lockScroll();" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu" id="menu">
-                <li><a class="link" href="#aboutus">About Us</a></li>
-                <li><a class="link" href="#members">Committee</a></li>
-                <li><a class="link" href="#events">Events</a></li>
-                <li><a class="link" href="#joinieee">Join IEEE</a></li>
-                <li><a class="link" href="#contacts">Contacts</a></li>
+                <li><a class="link" href="#aboutus" onclick="menuHide();">About Us</a></li>
+                <li><a class="link" href="#members" onclick="menuHide();">Committee</a></li>
+                <li><a class="link" href="#events" onclick="menuHide();">Events</a></li>
+                <li><a class="link" href="#joinieee" onclick="menuHide();">Join IEEE</a></li>
+                <li><a class="link" href="#contacts" onclick="menuHide();">Contacts</a></li>
             </ul>
         </div>
     </header>
@@ -664,8 +664,7 @@
         </div>
     </div>
     <script>
-        window.onscroll = function () { rolldown() };
-        window.onclick = function (e) { menuHide(e) };
+        window.onscroll = function () { rollDown() };
     </script>
 </body>
 

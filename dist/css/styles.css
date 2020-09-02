@@ -500,8 +500,11 @@ a.sub-link {
 .header {
     position: fixed;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
     z-index: 99;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .navbar {
@@ -576,7 +579,7 @@ a.sub-link {
 }
 
 .header .menu-btn:checked~.menu {
-    max-height: 100vh;
+    max-height: 100%;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -595,6 +598,9 @@ a.sub-link {
     top: 0;
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
 /* Content position */
 
 .center {
@@ -764,7 +770,7 @@ a.sub-link {
         max-width: 200px;
     }
     h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
     h2 {
         font-size: 36px;
