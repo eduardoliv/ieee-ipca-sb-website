@@ -113,6 +113,15 @@ pre {
     white-space: pre-line;
 }
 
+.display-error{
+    font-size: 6rem;
+    margin: 0px;
+}
+
+.footer-text{
+    font-size: 12px;
+}
+
 italic {
     font-style: italic;
 }
@@ -154,6 +163,17 @@ text-color-alt {
 }
 
 /* links */
+a.alt-link {
+    text-decoration: none;
+    color: #110626;
+    transition: all .5s ease;
+}
+
+a.alt-link:hover {
+    text-decoration: none;
+    color: #f46c11;
+    transition: all .5s ease;
+}
 
 a.sub-link {
     text-decoration: none;
@@ -197,12 +217,12 @@ a.sub-link {
     position: relative;
 }
 
-.bg-grey {
+.wrapper.bg-grey {
     background-color: #f2f2f2;
 }
 
-.bg-dark {
-    background: #110626;
+.wrapper.bg-dark {
+    background-color: #110626;
 }
 
 #container {
@@ -504,7 +524,7 @@ a.sub-link {
     padding: 0;
     height: auto;
     z-index: 99;
-    transition: all .3s ease;
+    transition: all .2s ease-in-out;
 }
 
 .navbar {
@@ -517,6 +537,7 @@ a.sub-link {
     list-style: none;
     overflow: hidden;
     background-color: transparent;
+    transition: all .2s ease-in-out;
 }
 
 .header li a {
@@ -524,6 +545,7 @@ a.sub-link {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
+    transition: all .2s ease-in-out;
 }
 
 /* menu */
@@ -531,7 +553,7 @@ a.sub-link {
 .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 /* menu icon */
@@ -546,21 +568,21 @@ a.sub-link {
 }
 
 .header .menu-icon .navicon {
-    background: #fff;
+    background-color: white;
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: all .2s ease-in-out;
     width: 28px;
 }
 
 .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
-    background: #fff;
+    background-color: white;
     content: '';
     display: block;
     height: 100%;
     position: absolute;
-    transition: all .2s ease-out;
+    transition: all .2s ease-in-out;
     width: 100%;
 }
 
@@ -596,6 +618,13 @@ a.sub-link {
 
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .lock-scroll {
@@ -894,6 +923,9 @@ a.sub-link {
     }
     .svg {
         max-width: 100%;
+    }
+    .footer-text{
+        font-size: 16px;
     }
 }
 
