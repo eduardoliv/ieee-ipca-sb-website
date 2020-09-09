@@ -26,7 +26,7 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -41,6 +41,8 @@ body {
     font-family: var(--font), var(--fontstyle);
     background-color: var(--bodybgcolor);
     color: var(--fontcolor);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .clearfix {
@@ -51,6 +53,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 *:focus {
