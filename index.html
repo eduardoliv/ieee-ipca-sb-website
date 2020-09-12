@@ -1,18 +1,653 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=dist/index.html">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Oliveira | © IEEE IPCA Student Branch 2020 | Instituto Politécnico do Cávado e do Ave">
+    <!-- Primary Meta Tags -->
     <title>IEEE IPCA Student Branch</title>
-    <script language="javascript">
-        window.location.href = "dist/index.html"
-    </script>
+    <meta name="title" content="IEEE IPCA Student Branch">
+    <meta name="description"
+        content="IEEE is the world's largest technical professional non-profit organization dedicated to advancing technology for the benefit of humanity. We are a Student Branch belonging to IEEE, based at the Polytechnic Institute of Cávado and Ave.">
+    <meta name="google" content="notranslate">
+        <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property='og:url' content='https://ipca.ieee-pt.org/'>
+    <meta property='og:title' content='IEEE IPCA Student Branch'>
+    <meta property='og:description'
+        content='We are a Student Branch belonging to IEEE, based at the Polytechnic Institute of Cávado and Ave.'>
+    <meta property='og:image' content='https://ipca.ieee-pt.org/images/cover.png'>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ipca.ieee-pt.org/">
+    <meta property="twitter:title" content="IEEE IPCA Student Branch">
+    <meta property="twitter:description"
+        content="We are a Student Branch belonging to IEEE, based at the Polytechnic Institute of Cávado and Ave.">
+    <meta property="twitter:image" content="https://ipca.ieee-pt.org/images/cover.png">
+    <!-- Links and Scripts -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="https://ipca.ieee-pt.org/ieee_favicon.ico">
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
 
 <body>
-    <!--Dummy index-->
-    <a href="dist/index.html">Click here if you are not redirected automatically...</a>
+    <!-- Navbar -->
+    <header class="header" id="navbar">
+        <div class="content-block center" id="container">
+            <input class="menu-btn" type="checkbox" id="menu-btn" onclick="lockScroll();" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu" id="menu">
+                <li><a class="link" href="#aboutus" onclick="menuHide();">About Us</a></li>
+                <li><a class="link" href="#members" onclick="menuHide();">Committee</a></li>
+                <li><a class="link" href="#events" onclick="menuHide();">Events</a></li>
+                <li><a class="link" href="#joinieee" onclick="menuHide();">Join IEEE</a></li>
+                <li><a class="link" href="#contacts" onclick="menuHide();">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Banner -->
+    <div class="bg-wrapper" id="banner">
+        <div class="banner-content center padding-container" id="container">
+            <div class="row vertical-center">
+                <div class="row padding-banner-content-tb">
+                    <div class="double-col padding-content-l logo-l">
+                        <embed type="image/svg+xml" src="./svg/IPCA_SB_Logotipe.svg">
+                    </div>
+                    <div class="double-col logo-r"></div>
+                </div>
+                <div class="row padding-banner-content-tb">
+                    <div class="double-col padding-content">
+                        <h3>“As engineers, we were going to be in a position to change the world – not just study
+                            it.”
+                        </h3>
+                        <p>
+                            <light>—Henry Petroski, American engineer and author specializing in failure analysis
+                            </light>
+                        </p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/mike-bergmann-9nw9SRmmfZw-unsplash.jpg">
+    </div>
+    <!-- About Us -->
+    <div class="wrapper" id="aboutus">
+        <div class="content-block center padding-container" id="container">
+            <div class="row">
+                <div class="col padding-content">
+                    <h1>
+                        <bold>
+                            <title-color>Who<br>Are<br>We?</title-color>
+                        </bold>
+                    </h1>
+                </div>
+                <div class="triple-col padding-content">
+                    <div class="row text-align-justify padding-content-tb">
+                        <p>
+                            <text-color>
+                                <bold>IEEE</bold> is the world's largest technical professional non-profit
+                                organization dedicated to advancing
+                                technology for the benefit of humanity. We are a Student Branch belonging to <bold>IEEE
+                                </bold>, based at the <bold>Polytechnic Institute of Cávado and Ave.</bold>
+                                <br><br>
+                                In this nucleus, the development of soft and hard skills is carried out through
+                                integration
+                                in competitions and organization of events such as Workshops or TalkAbouts and, above
+                                all,
+                                provides
+                                entertainment and socializing among different people.
+                            </text-color>
+                        </p>
+                    </div>
+                    <div class="row text-align-center padding-content-tb">
+                        <div class="triple-col flex-adjust">
+                            <text-color>
+                                <h1>+10</h1>
+                                <p>Members</p>
+                            </text-color>
+                        </div>
+                        <div class="triple-col flex-adjust">
+                            <text-color>
+                                <h1>1</h1>
+                                <p>Workshops</p>
+                            </text-color>
+                        </div>
+                        <div class="triple-col flex-adjust">
+                            <text-color>
+                                <h1>3</h1>
+                                <p>Guest Lectures</p>
+                            </text-color>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ExCom -->
+    <div class="wrapper bg-grey" id="members">
+        <div class="content-block center padding-container" id="container">
+            <div class="row">
+                <div class="col padding-content">
+                    <h1 class="padding-content-lr">
+                        <title-color>
+                            <bold>ExCom</bold>
+                        </title-color>
+                    </h1>
+                    <h2 class="padding-content-lr">
+                        <title-color>
+                            <light>
+                                <italic>Executive<br>Committee</italic>
+                            </light>
+                        </title-color>
+                    </h2>
+                </div>
+                <div class="triple-col padding-content">
+                    <dix class="row padding-content-tb">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <img src="./images/81865943_10218572122087520_9142836057115459584_o.jpg">
+                                <div class="container">
+                                    <h4>
+                                        <bold>
+                                            <text-color>Joaquin Dillen</text-color>
+                                        </bold>
+                                    </h4>
+                                    <p>
+                                        <text-color>Chair</text-color>
+                                    </p>
+                                    <h4>
+                                        <text-color>Bachelor's degree student</text-color>
+                                    </h4>
+                                    <div class="limiter">
+                                        <h5>
+                                            <text-color>Electrotechnical and Computers Engineering</text-color>
+                                        </h5>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.facebook.com/DJDASILVAANDR"><i
+                                                    class="fab fa-facebook fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.linkedin.com/in/joaquin-dillen-679218177"><i
+                                                    class="fab fa-linkedin fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.instagram.com/joaco____/"><i
+                                                    class="fab fa-instagram fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://github.com/JoaquinDillen/"><i
+                                                    class="fab fa-github fa-2x"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <img src="./images/IMG_20190224_181321_600.jpg">
+                                <div class="container">
+                                    <h4>
+                                        <bold>
+                                            <text-color>Eduardo Oliveira</text-color>
+                                        </bold>
+                                    </h4>
+                                    <p>
+                                        <text-color>Vice-Chair</text-color>
+                                    </p>
+                                    <h4>
+                                        <text-color>Bachelor's degree student</text-color>
+                                    </h4>
+                                    <div class="limiter">
+                                        <h5>
+                                            <text-color>Computer Systems Engineering</text-color>
+                                        </h5>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.facebook.com/jorge.oliveira.dsn"><i
+                                                    class="fab fa-facebook fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.linkedin.com/in/eduardoliv/"><i
+                                                    class="fab fa-linkedin fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.instagram.com/eduardoliv_/"><i
+                                                    class="fab fa-instagram fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://github.com/eduardoliv"><i
+                                                    class="fab fa-github fa-2x"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dix>
+                    <dix class="row padding-content-tb">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <img src="./images/119048981_322050152465581_7901467686185315769_n.jpg">
+                                <div class="container">
+                                    <h4>
+                                        <bold>
+                                            <text-color>Duarte Fernandes</text-color>
+                                        </bold>
+                                    </h4>
+                                    <p>
+                                        <text-color>Secretary</text-color>
+                                    </p>
+                                    <h4>
+                                        <text-color>Bachelor's degree student</text-color>
+                                    </h4>
+                                    <div class="limiter">
+                                        <h5>
+                                            <text-color>Computer Systems Engineering</text-color>
+                                        </h5>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.facebook.com/duarte.fernandes.20"><i
+                                                    class="fab fa-facebook fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://www.linkedin.com/in/duarte-fernandes-301004198/"><i
+                                                    class="fab fa-linkedin fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a href="/"
+                                                onclick="return false;"><i class="fab fa-instagram fa-2x"></i></a></div>
+                                        <div class="quadruple-col flex-adjust padding-content"><a
+                                                href="https://github.com/dartsfernandes"><i
+                                                    class="fab fa-github fa-2x"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <img src="./images/vacancy.png">
+                                <div class="container">
+                                    <h4>
+                                        <bold>
+                                            <text-color>Open Vacancy</text-color>
+                                        </bold>
+                                    </h4>
+                                    <p>
+                                        <text-color>Treasurer</text-color>
+                                    </p>
+                                    <h4>
+                                        <text-color>Maintain the appropriate financial accounts...</text-color>
+                                    </h4>
+                                    <a class="sub-link"
+                                        href="https://students.ieee.org/student-branch-officer-responsibilities-and-administration/">
+                                        <text-color-alt><i class="fas fa-info-circle"></i>&nbsp;&nbsp;more info
+                                        </text-color-alt>
+                                    </a>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col padding-content-tb">
+                                            <button class="button email"
+                                                onclick="location.href='mailto:ieee.est.sb@ipca.pt'"><span>Apply</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dix>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest & Upcoming events -->
+    <div class="wrapper" id="events">
+        <div class="content-block center padding-container" id="container">
+            <div class="row">
+                <div class="col padding-content">
+                    <h1 class="padding-content-lr">
+                        <title-color>
+                            <bold>Latest &<br>Upcoming<br>Events</bold>
+                        </title-color>
+                    </h1>
+                </div>
+                <div class="triple-col padding-content">
+                    <div class="row padding-content-tb">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <!--<div class="upcoming-event"><i class="fas fa-tasks"></i>&nbsp;&nbsp;&nbsp;Upcoming</div>-->
+                                <img src="./images/icode_2020.png">
+                                <div class="container">
+                                    <h5>
+                                        <text-color-alt>Mon, 03 Feb 2020 19:05:14</text-color-alt>
+                                    </h5>
+                                    <div class="limiter">
+                                        <p>
+                                            <text-color>iCode 2020</text-color>
+                                        </p>
+                                        <h4>
+                                            <text-color>The IEEE IPCA Student Branch, in conjunction with the
+                                                Computer Systems Engineering course will organize a new
+                                                edition of the “iCode” event. The “iCode” consists of a test with
+                                                several
+                                                programming challenges over three days. In addition,
+                                                workshops open to the public on various topics in the field of
+                                                Computing.</text-color>
+                                        </h4>
+                                    </div>
+                                    <hr>
+                                    <h4>
+                                        <text-color><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;IPCA EST
+                                            Auditorium</text-color>
+                                    </h4>
+                                    <h4>
+                                        <text-color><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Thu, 11 Fev 2020
+                                        </text-color>
+                                    </h4>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col flex-adjust padding-content-tb">
+                                            <button class="button info"
+                                                onclick="location.href='https://www.facebook.com/events/2738187102935753/'"><span>More
+                                                    info </span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <!--<div class="upcoming-event"><i class="fas fa-tasks"></i>&nbsp;&nbsp;&nbsp;Upcoming</div>-->
+                                <img src="./images/c_workshop_2019.jpg">
+                                <div class="container">
+                                    <h5>
+                                        <text-color-alt>Wed, 16 Oct 2019 00:00:00</text-color-alt>
+                                    </h5>
+                                    <div class="limiter">
+                                        <p>
+                                            <text-color>C Workshop</text-color>
+                                        </p>
+                                        <h4>
+                                            <text-color>The IEEE IPCA Student Branch will organize a workshop dedicated
+                                                to
+                                                the C language on 13th November at 14:00h. If you are at the beginning
+                                                of your journey in the world
+                                                programming and you intend to learn a little more than this language
+                                                has to offer, join us!</text-color>
+                                        </h4>
+                                    </div>
+                                    <hr>
+                                    <h4>
+                                        <text-color><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;IPCA EST
+                                            Sala 1</text-color>
+                                    </h4>
+                                    <h4>
+                                        <text-color><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Wed, 13 Nov 2019
+                                        </text-color>
+                                    </h4>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col flex-adjust padding-content-tb">
+                                            <button class="button info"
+                                                onclick="location.href='https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/'"><span>More
+                                                    info </span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Join IEEE -->
+    <div class="wrapper bg-grey" id="joinieee">
+        <div class="content-block center padding-container" id="container">
+            <div class="row">
+                <div class="col padding-content">
+                    <h1 class="padding-content-lr">
+                        <title-color>
+                            <bold>Join<br>IEEE!</bold>
+                        </title-color>
+                    </h1>
+                </div>
+                <div class="triple-col padding-content">
+                    <div class="row">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <div class="bg b01">
+                                    <div class="col padding-content-tb">
+                                        <div class="circle center">
+                                            <div class="circle__inner">
+                                                <div class="circle__wrapper">
+                                                    <div class="circle__content">
+                                                        <h1>
+                                                            <text-color-alt><i class="fas fa-sign-in-alt"></i>
+                                                            </text-color-alt>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <h3>
+                                        <text-color>Step 1 - IEEE Registration</text-color>
+                                    </h3>
+                                    <hr>
+                                    <h4>
+                                        <text-color>Register on the IEEE official website.
+                                            <br>Choose the category
+                                            “Professional and Education Information” and then select “Instituto
+                                            Politécnico do Cávado e Ave”.<br><br>
+                                            <bold>Membership cost: 27$ (24.30€) annual.</bold>
+                                        </text-color>
+                                    </h4>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col flex-adjust padding-content-tb">
+                                            <button class="button register"
+                                                onclick="location.href='https://www.ieee.org/membership/join/index.html'"><span>Register</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <div class="bg b02">
+                                    <div class="col padding-content-tb">
+                                        <div class="circle center">
+                                            <div class="circle__inner">
+                                                <div class="circle__wrapper">
+                                                    <div class="circle__content">
+                                                        <h1>
+                                                            <text-color-alt><i class="fas fa-envelope"></i>
+                                                            </text-color-alt>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <h3>
+                                        <text-color>Step 2 - Email Us</text-color>
+                                    </h3>
+                                    <hr>
+                                    <h4>
+                                        <text-color>Send us an email to ieee.est.sb@ipca.pt containing:<br>
+                                            1 - your full name<br>
+                                            2 - IEEE membership number<br>
+                                            3 - IPCA student ID
+                                        </text-color>
+                                    </h4>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col flex-adjust padding-content-tb">
+                                            <button class="button email"
+                                                onclick="location.href='mailto:ieee.est.sb@ipca.pt'"><span>Email
+                                                    Us</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col padding-content">
+                            <div class="card clearfix">
+                                <div class="bg b03">
+                                    <div class="col padding-content-tb">
+                                        <div class="circle center">
+                                            <div class="circle__inner">
+                                                <div class="circle__wrapper">
+                                                    <div class="circle__content">
+                                                        <h1>
+                                                            <text-color-alt><i class="fas fa-user-clock"></i>
+                                                            </text-color-alt>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <h3>
+                                        <text-color>Step 3 - Wait for confirmation</text-color>
+                                    </h3>
+                                    <hr>
+                                    <h4>
+                                        <text-color>We will check your information and send you an email
+                                            with the confirmation. All the details will be included on the email and
+                                            you’ll have access to our room.
+                                        </text-color>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contacts -->
+    <div class="wrapper bg-dark" id="contacts">
+        <div class="content-block center padding-container-tb" id="container">
+            <div class="row">
+                <div class="col svg padding-content">
+                    <img class=" vertical-center" src="./svg/SB_vertical-logotype.svg" alt="IEEE IPCA SB Logotype">
+                </div>
+                <div class="triple-col padding-content">
+                    <div class="row padding-content-lr">
+                        <div class="double-col padding-content">
+                            <div class="row">
+                                <h3><i class="fas fa-map-pin"></i>&nbsp;&nbsp;&nbsp;Address</h3>
+                            </div>
+                            <div class="row">
+                                <p><a class="sub-link" href="https://goo.gl/maps/6reBNmmC2Mz8rzBx9">
+                                        <light>IPCA Campus<br>Lugar
+                                            do Aldão<br>4750-810 Vila Frescainha (São Martinho)</light><br><br>
+                                    </a></p>
+                            </div>
+                            <div class="row">
+                                <h3><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Contacts</h3>
+                            </div>
+                            <div class="row">
+                                <p><a class="sub-link" href="mailto:ieee.est.sb@ipca.pt">
+                                        <light>ieee.est.sb@ipca.pt</light><br><br>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <h3><i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp;Follow Us</h3>
+                            </div>
+                            <div class="row">
+                                <a class="sub-link padding-content-r"
+                                    href="https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/"><i
+                                        class="fab fa-facebook fa-2x"></i></a>
+                                <a class="sub-link padding-content-lr"
+                                    href="https://www.linkedin.com/in/ieee-ipca-student-branch-78071a196/"><i
+                                        class="fab fa-linkedin fa-2x"></i></a>
+                                <a class="sub-link padding-content-lr" href="https://www.instagram.com/ieee.ipca.sb/"><i
+                                        class="fab fa-instagram fa-2x"></i></a>
+                                <a class="sub-link padding-content-l"
+                                    href="https://github.com/IEEE-IPCA-Student-Branch/"><i
+                                        class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="double-col padding-content">
+                            <div class="row">
+                                <div class="row">
+                                    <h3><i class="fas fa-link"></i>&nbsp;&nbsp;&nbsp;Explore IEEE</h3>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link" href="https://ieeexplore.ieee.org/Xplore/home.jsp">
+                                            <light>IEEE
+                                                <italic>Xplore</italic> Digital Library</light>
+                                        </a></p>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link"
+                                            href="http://standards.ieee.org/?_ga=2.38607011.1218789621.1598553244-1897050209.1590843840">
+                                            <light>IEEE
+                                                Standarts</light>
+                                        </a></p>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link"
+                                            href="http://spectrum.ieee.org/?_ga=2.38607011.1218789621.1598553244-1897050209.1590843840">
+                                            <light>IEEE
+                                                Spectrum</light>
+                                        </a></p>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link"
+                                            href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec">
+                                            <light>IEEE
+                                                Collabratec™</light>
+                                        </a></p>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link" href="https://www.ieee.org/membership/benefits/index.html">
+                                            <light>Member
+                                                Benefits</light>
+                                        </a></p>
+                                </div>
+                                <div class="row">
+                                    <p><a class="sub-link" href="https://www.ieee.org/sitemap.html">
+                                            <light>More IEEE Sites</light>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="row padding-content-tb">
+                                    <a class="sub-link" href="#banner"><i class="fas fa-arrow-circle-up fa-2x"></i>
+                                        <p>
+                                            <light>Top of page</light>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="wrapper">
+        <div class="content-block center padding-container-lr text-align-center" id="container">
+            <pre class="footer-text"><text-color-alt>Copyright © 2020 | IEEE IPCA Student Branch</text-color-alt></pre>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () { rollDown() };
+    </script>
 </body>
 
 </html>
