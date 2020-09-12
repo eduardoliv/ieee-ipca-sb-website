@@ -467,7 +467,7 @@ a.pages{
     font-family: 'Lato' !important;
     font-weight: 400;
     font-size: 18px;
-    padding: 15px 50px;
+    padding: 15px 10px;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -475,6 +475,14 @@ a.pages{
 .button.info {
     background-color: #EFF1F2;
     color: #000;
+}
+
+.button.margin-right {
+    margin-right: 5px;
+}
+
+.button.margin-left {
+    margin-left: 5px;
 }
 
 .button span{

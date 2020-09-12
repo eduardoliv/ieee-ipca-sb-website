@@ -29,7 +29,8 @@
     <!-- Links and Scripts -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="https://ipca.ieee-pt.org/ieee_favicon.ico">
     <link href="./css/styles.css" rel="stylesheet">
-    <script src="./js/scripts.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+    <script type="text/javascript" src="./js/pagination.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -312,88 +313,11 @@
                 </div>
                 <div class="triple-col padding-content">
                     <div class="row padding-content-tb">
-                        <div class="col padding-content">
-                            <div class="card clearfix">
-                                <!--<div class="upcoming-event"><i class="fas fa-tasks"></i>&nbsp;&nbsp;&nbsp;Upcoming</div>-->
-                                <img src="./images/icode_2020.png">
-                                <div class="container">
-                                    <h5>
-                                        <text-color-alt>Mon, 03 Feb 2020 19:05:14</text-color-alt>
-                                    </h5>
-                                    <div class="limiter">
-                                        <p>
-                                            <text-color>iCode 2020</text-color>
-                                        </p>
-                                        <h4>
-                                            <text-color>The IEEE IPCA Student Branch, in conjunction with the
-                                                Computer Systems Engineering course will organize a new
-                                                edition of the “iCode” event. The “iCode” consists of a test with
-                                                several
-                                                programming challenges over three days. In addition,
-                                                workshops open to the public on various topics in the field of
-                                                Computing.</text-color>
-                                        </h4>
-                                    </div>
-                                    <hr>
-                                    <h4>
-                                        <text-color><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;IPCA EST
-                                            Auditorium</text-color>
-                                    </h4>
-                                    <h4>
-                                        <text-color><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Thu, 11 Fev 2020
-                                        </text-color>
-                                    </h4>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col flex-adjust padding-content-tb">
-                                            <button class="button info"
-                                                onclick="location.href='https://www.facebook.com/events/2738187102935753/'"><span>More
-                                                    info </span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col padding-content">
-                            <div class="card clearfix">
-                                <!--<div class="upcoming-event"><i class="fas fa-tasks"></i>&nbsp;&nbsp;&nbsp;Upcoming</div>-->
-                                <img src="./images/c_workshop_2019.jpg">
-                                <div class="container">
-                                    <h5>
-                                        <text-color-alt>Wed, 16 Oct 2019 00:00:00</text-color-alt>
-                                    </h5>
-                                    <div class="limiter">
-                                        <p>
-                                            <text-color>C Workshop</text-color>
-                                        </p>
-                                        <h4>
-                                            <text-color>The IEEE IPCA Student Branch will organize a workshop dedicated
-                                                to
-                                                the C language on 13th November at 14:00h. If you are at the beginning
-                                                of your journey in the world
-                                                programming and you intend to learn a little more than this language
-                                                has to offer, join us!</text-color>
-                                        </h4>
-                                    </div>
-                                    <hr>
-                                    <h4>
-                                        <text-color><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;IPCA EST
-                                            Sala 1</text-color>
-                                    </h4>
-                                    <h4>
-                                        <text-color><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Wed, 13 Nov 2019
-                                        </text-color>
-                                    </h4>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col flex-adjust padding-content-tb">
-                                            <button class="button info"
-                                                onclick="location.href='https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/'"><span>More
-                                                    info </span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row" id="listingTable"></div>
+                        <div class="row padding-content-lr">
+                            <a class="page-buttons" href="javascript:previousPage()" id="prev_btn">Prev</a>
+                            <a class="pages"><span id="page"></span></a>
+                            <a class="page-buttons" href="javascript:nextPage()" id="next_btn">Next</a>
                         </div>
                     </div>
                 </div>
@@ -647,6 +571,7 @@
     </div>
     <script>
         window.onscroll = function () { rollDown() };
+        window.onload = function() {getDataJSON();};
     </script>
 </body>
 
