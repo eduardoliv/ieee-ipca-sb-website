@@ -1,7 +1,7 @@
 {
     "events": [
         {
-            "event_state": "",
+            "event_state": "upcoming",
             "img_path": "./images/icode_2020.png",
             "post_date": "Mon, 03 Feb 2020 19:05:14",
             "title": "iCode 2020",
@@ -21,7 +21,7 @@
             "link": "https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/"
         },
         {
-            "event_state": "",
+            "event_state": "canceled",
             "img_path": "./images/icode_2020.png",
             "post_date": "Mon, 03 Feb 2020 19:05:14",
             "title": "iCode 2020",
