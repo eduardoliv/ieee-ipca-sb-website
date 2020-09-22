@@ -290,6 +290,10 @@ a.pages{
     flex: auto;
 }
 
+.flex-min-width {
+    min-width: 271px;
+}
+
 .double-col {
     display: flex;
     flex-direction: column;
@@ -422,6 +426,16 @@ a.pages{
     padding: 2px 16px;
 }
 
+.card .limiter-fixed {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    color: black;
+    height: 10.8em; /* exactly six lines */
+}
+
 .card .limiter h4 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -460,6 +474,7 @@ a.pages{
     color: #fff;
     text-align: center;
     font-family: 'Lato' !important;
+    text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     padding: 15px 10px;
@@ -482,6 +497,7 @@ a.pages{
 
 .button span{
     cursor: pointer;
+    text-decoration: none;
     display: inline-block;
     position: relative;
     transition: 0.5s;
@@ -491,6 +507,7 @@ a.pages{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: '\f05a';
+    text-decoration: none;
     position: absolute;
     opacity: 0;
     top: 0;
@@ -950,6 +967,15 @@ a.pages{
     .footer-text{
         font-size: 16px;
     }
+    .card .limiter-fixed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 15;
+        -webkit-box-orient: vertical;
+        color: black;
+        height: 18em; /* exactly six lines */
+    }
 }
 
 /* Desktops and laptops */
@@ -961,14 +987,5 @@ a.pages{
     }
     .button {
         padding: 15px 20px;
-    }
-    .col {
-        flex: 1;
-    }
-    .double-col {
-        flex: 2;
-    }
-    .triple-col {
-        flex: 3;
     }
 }
