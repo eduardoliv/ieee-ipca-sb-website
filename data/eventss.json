@@ -32,6 +32,39 @@
             "event_date": "Thu, 11 Fev 2020",
             "info_link": "https://www.facebook.com/events/2738187102935753/",
             "register_link": "https://www.facebook.com/events/2738187102935753/"
+        },
+        {
+            "event_state": "upcoming",
+            "img_path": "./images/icode_2020.png",
+            "post_date": "Mon, 03 Feb 2020 19:05:14",
+            "title": "iCode 2020",
+            "desc": "The IEEE IPCA Student Branch, in conjunction with the Computer Systems Engineering course will organize a new edition of the \"iCode\" event. The \"iCode\" consists of a test with several programming challenges over three days. In addition, workshops open to the public on various topics in the field of Computing.",
+            "event_place": "IPCA EST Auditorium",
+            "event_date": "Thu, 11 Fev 2020",
+            "info_link": "https://www.facebook.com/events/2738187102935753/",
+            "register_link": "https://www.facebook.com/events/2738187102935753/"
+        },
+        {
+            "event_state": "",
+            "img_path": "./images/c_workshop_2019.jpg",
+            "post_date": "Wed, 16 Oct 2019 00:00:00",
+            "title": "C Workshop",
+            "desc": "The IEEE IPCA Student Branch will organize a workshop dedicated to the C language on 13th November at 14:00h. If you are at the beginning of your journey in the world programming and you intend to learn a little more than this language to offer, join us!",
+            "event_place": "IPCA EST Sala 1",
+            "event_date": "Wed, 13 Nov 2019",
+            "info_link": "https://www.facebook.com/IEEE-IPCA-Student-Branch-103334174468617/",
+            "register_link": "https://www.ipca.pt"
+        },
+        {
+            "event_state": "canceled",
+            "img_path": "./images/icode_2020.png",
+            "post_date": "Mon, 03 Feb 2020 19:05:14",
+            "title": "iCode 2020",
+            "desc": "The IEEE IPCA Student Branch, in conjunction with the Computer Systems Engineering course will organize a new edition of the \"iCode\" event. The \"iCode\" consists of a test with several programming challenges over three days. In addition, workshops open to the public on various topics in the field of Computing.",
+            "event_place": "IPCA EST Auditorium",
+            "event_date": "Thu, 11 Fev 2020",
+            "info_link": "https://www.facebook.com/events/2738187102935753/",
+            "register_link": "https://www.facebook.com/events/2738187102935753/"
         }
     ]
 }
