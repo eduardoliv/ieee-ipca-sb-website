@@ -45,7 +45,7 @@
             "register_link": "https://www.facebook.com/events/2738187102935753/"
         },
         {
-            "event_state": "",
+            "event_state": "canceled",
             "img_path": "./images/c_workshop_2019.jpg",
             "post_date": "Wed, 16 Oct 2019 00:00:00",
             "title": "C Workshop",
