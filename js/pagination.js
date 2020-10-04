@@ -18,6 +18,10 @@ function changePage(page) {
     flex_content.innerHTML = "";
 
     for (var i = (page - 1) * records_per_page; i < (page * records_per_page); i++) {
+        if(objects[i] == null){
+            flex_content.innerHTML += "<div class=\"col padding-content\"> </div>";
+            break;
+        }
         var event_formatted = "";
         if (objects[i].event_state == "upcoming")
             event_formatted = "<div class=\"upcoming-event\"><i class=\"fas fa-tasks\"></i>&nbsp;&nbsp;&nbsp;Upcoming</div>";
