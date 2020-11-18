@@ -2,7 +2,7 @@
     "events": [
         {
             "event_state": "upcoming",
-            "img_path": "./images/lw_2020.jpg",
+            "img_path": "./images/lw_2020.png",
             "post_date": "Wed, 18 Nov 2020 12:53:16",
             "title": "Linux Workshop",
             "desc": "O IEEE IPCA Student Branch irá organizar um Workshop Linux, conduzido pelo Prof. Dr. Alberto Simões. O objetivo é dar a conhecer a potêncialidade do S.O., além dos muitos comandos existêntes. No final do workshop de Linux será enviado um certificado de participação!",
@@ -13,7 +13,7 @@
         },
         {
             "event_state": "upcoming",
-            "img_path": "./images/lip_2020.jpg",
+            "img_path": "./images/lip_2020.png",
             "post_date": "Wed, 18 Nov 2020 12:52:14",
             "title": "Linux Installation Party",
             "desc": "O evento, coordenado pelo IEEE IPCA Student Branch, será conduzido pelo Prof. Dr. Alberto Simões. O objetivo é a instalação de uma das distribuições do Sistema Operativo Linux (Mint, Ubuntu, Fedora), quer por via de boot, dual-boot(Legacy) ou em máquina virtual. Adicionalmente pode ser instalado em Windows o terminal do Ubuntu (WSL), se assim o pretenderem.",
