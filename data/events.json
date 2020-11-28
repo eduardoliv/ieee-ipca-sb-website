@@ -1,7 +1,7 @@
 {
     "events": [
         {
-            "event_state": "upcoming",
+            "event_state": "",
             "img_path": "./images/lw_2020.png",
             "post_date": "Wed, 18 Nov 2020 12:53:16",
             "title": "Linux Workshop",
