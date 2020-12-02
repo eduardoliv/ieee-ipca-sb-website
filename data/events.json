@@ -1,6 +1,17 @@
 {
     "events": [
         {
+            "event_state": "upcoming",
+            "img_path": "./images/qt_workshop_2020.jpg",
+            "post_date": "Wed, 02 Nov 2020 00:02:00",
+            "title": "Qt Workshop",
+            "desc": "Neste workshop irá ser abordada a comunicação entre uma aplicação Qt e um microcontrolador ou outro dispositivo utilizando porta série (ou o protocolo RS232). Irá a ser realizada uma aplicação demo que reune vários conhecimentos sobre Qt como o uso de \"signals e slots\", janelas de diálogo com o utilizador, escrita em ficheiros e outros conceitos sobre programação orientada a objetos. O evento será On-Line.",
+            "event_place": "Online, Via ZOOM",
+            "event_date": "Sat, 05 Dez 2020 14h00",
+            "info_link": "https://www.facebook.com/events/400852364463532/",
+            "register_link": "https://forms.gle/37MmrRJgPfccLv8p7"
+        },
+        {
             "event_state": "",
             "img_path": "./images/lw_2020.png",
             "post_date": "Wed, 18 Nov 2020 12:53:16",
@@ -9,7 +20,7 @@
             "event_place": "Online, Via ZOOM",
             "event_date": "Sat, 28 Nov 2020 14h00",
             "info_link": "https://fb.me/e/SfqBgUTo",
-            "register_link": "https://forms.gle/Dxu2sxzqxEoS1DUf9"
+            "register_link": "/"
         },
         {
             "event_state": "",
@@ -20,7 +31,7 @@
             "event_place": "Campus IPCA EST, Sala T",
             "event_date": "Thu, 26 Nov 2020 18h30",
             "info_link": "https://fb.me/e/3bqwVbk3v/",
-            "register_link": "https://forms.gle/Dxu2sxzqxEoS1DUf9"
+            "register_link": "/"
         },
 
 
