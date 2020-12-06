@@ -1,7 +1,7 @@
 {
     "events": [
         {
-            "event_state": "upcoming",
+            "event_state": "",
             "img_path": "./images/qt_workshop_2020.jpg",
             "post_date": "Wed, 02 Nov 2020 00:02:00",
             "title": "Qt Workshop",
