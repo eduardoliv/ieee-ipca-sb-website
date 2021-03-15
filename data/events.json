@@ -2,6 +2,17 @@
     "events": [
         {
             "event_state": "",
+            "img_path": "./images/ws_git_2021.png",
+            "post_date": "Mon, 15 Mar 2021 21:38:52",
+            "title": "GIT Workshop",
+            "desc": "Neste Webinar serão abordados os tópicos básicos do sistema de controlo de versão distribuído, de código aberto. O evento ocorrerá On-Line.",
+            "event_place": "Online, Via ZOOM",
+            "event_date": "Tue, 16 Mar 2021 16h00",
+            "info_link": "https://www.facebook.com/IPCAIEEE",
+            "register_link": "https://bit.ly/2PKGmeR"
+        },
+        {
+            "event_state": "",
             "img_path": "./images/qt_workshop_2020.jpg",
             "post_date": "Wed, 02 Nov 2020 00:02:00",
             "title": "Qt Workshop",
